@@ -1,0 +1,13 @@
+# Xcode
+xcuserdata/
+*.xccheckout
+*.xcworkspace
+xcuserdata/
+
+# CocoaPods
+Pods/
+*.lock
+*.xcworkspace
+
+# Yandex MapKit keys
+YandexMapKitApiKey.swift
