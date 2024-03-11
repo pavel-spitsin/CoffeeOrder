@@ -23,10 +23,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         LocationService().askUserForAuthorisation()
-        YMKMapKit.setApiKey(YandexMapKitApiKey.apiKey)
+        YMKMapKit.setApiKey(YandexMapKitApiKey.apiKey) //HINT BELOW
         YMKMapKit.setLocale("ru_RU")
         YMKMapKit.sharedInstance()
         return true
     }
 }
 
+//MARK: - To run the application, you need to add the YandexMapKitApiKey structure to the API folder
+/*
+ struct YandexMapKitApiKey {
+     static let apiKey = "YOUR_API_KEY"
+ }
+*/
